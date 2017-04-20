@@ -1,0 +1,3 @@
+<tomcat-users>
+	<add:user username="${manager.username:manager-script}" password="${manager.password:RANDOM}" roles="manager-script" />
+</tomcat-users>

@@ -1,0 +1,12 @@
+<Server>
+    <Service name="Catalina">
+            <Engine name="Catalina" defaultHost="localhost">
+
+            <Host update:autoDeploy="false">
+
+            </Host>
+
+        </Engine>
+
+    </Service>
+</Server>

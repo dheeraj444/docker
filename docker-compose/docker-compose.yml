@@ -1,0 +1,51 @@
+nginx:
+  image: nginx:1.3
+  links:
+    - nodejs1:nodejsOne
+    - nodejs2:nodejsTwo
+    - nodejs3:nodejsThree
+    - nodejs4:nodejsFour
+    - nodejs5:nodejsFive
+  
+  ports:
+    - "9090:9091"
+
+nodejs1:
+  image: nodejs:1.2
+  links:
+    - redis:1.0
+  ports:
+    - "8080"
+
+nodejs2: 
+  image: nodejs:1.2
+  links:
+    - redis:1.0
+  ports:
+    - "8080"
+
+nodejs3: 
+  image: nodejs:1.2
+  links:
+    - redis:1.0
+  ports:
+    - "8080"
+
+nodejs4: 
+  image: nodejs:1.2
+  links:
+    - redis:1.0
+  ports:
+    - "8080"
+
+nodejs5: 
+  image: nodejs:1.2
+  links:
+    - redis:1.0
+  ports:
+    - "8080"
+
+redis:
+  image: redis:1.0
+  ports:
+    - "6379"
